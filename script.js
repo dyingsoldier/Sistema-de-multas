@@ -15,11 +15,11 @@ button.addEventListener("click", function () {
 
   if (carroVel > pistaVel) {
     tittle.innerText = `Foi de multas amigo`
-    res.innerHTML = `<p> Você está acima da velocidade da pista, então foi multado </p>
+    res.innerHTML = `<p> Você estava acima da velocidade da pista, então foi multado </p>
     <p> a velocidade era de <strong> ${carroVel} km/h </strong> numa pista de <strong> ${pistaVel} km/h </strong> </p>`
   } else {
     tittle.innerText = `Quase em amigo`
-    res.innerHTML = `<p> Você estava abaixo da velocidade da pista, então não fez mais que sua obrigação! </p> <p> Sua velocidade era de <strong> ${carroVel} km/h </strong> numa pista de <strong> ${pistaVel} km/h </strong> </p>`
+    res.innerHTML = `<p> Você estava abaixo ou na velocidade da pista, então não fez mais que sua obrigação! </p> <p> Sua velocidade era de <strong> ${carroVel} km/h </strong> numa pista de <strong> ${pistaVel} km/h </strong> </p>`
   }
 
   velCarro.value = ""
