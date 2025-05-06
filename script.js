@@ -13,7 +13,7 @@ button.addEventListener("click", function () {
   console.log(carroVel)
   console.log(pistaVel)
 
-  if (carroVel >= pistaVel) {
+  if (carroVel > pistaVel) {
     tittle.innerText = `Foi de multas amigo`
     res.innerHTML = `<p> Você está acima da velocidade da pista, então foi multado </p>
     <p> a velocidade era de <strong> ${carroVel} km/h </strong> numa pista de <strong> ${pistaVel} km/h </strong> </p>`
